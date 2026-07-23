@@ -1,0 +1,40 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    specifiers: {}
+
+  apps/api:
+    dependencies:
+      '@my-org/shared-utils':
+        specifier: workspace:*
+        version: link:../../packages/shared-utils
+      hono:
+        specifier: 4.4.13
+        version: 4.4.13
+
+  packages/shared-utils:
+    dependencies:
+      zod:
+        specifier: 3.23.8
+        version: 3.23.8
+
+packages:
+
+  hono@4.4.13:
+    resolution: {integrity: sha512-dLFb4cBRQ1RLImprSEXnflQEDMg3WKcV8YkQVfGRLkmfS5R40k+AgTGqhDGWyWj5Y2JHhBpA2MJZP4KxqSHg==}
+    engines: {node: '>=16.9.0'}
+
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzydugDA==}
+
+snapshots:
+
+  hono@4.4.13: {}
+
+  zod@3.23.8: {}
