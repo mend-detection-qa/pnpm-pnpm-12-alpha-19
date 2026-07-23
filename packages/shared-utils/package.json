@@ -1,0 +1,9 @@
+{
+  "name": "@my-org/shared-utils",
+  "version": "1.0.0",
+  "description": "Shared utilities workspace package",
+  "main": "index.js",
+  "dependencies": {
+    "zod": "3.23.8"
+  }
+}
