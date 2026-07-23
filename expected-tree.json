@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-07-23T00:00:00Z",
+  "pm": "pnpm",
+  "pm_version_tested": "12.0.0-alpha.19",
+  "packages": {
+    "@my-org/api": {
+      "dependencies": [
+        "@my-org/shared-utils",
+        "hono"
+      ],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "local",
+      "source_detail": {
+        "workspace": "apps/api"
+      },
+      "version": "0.1.0"
+    },
+    "@my-org/shared-utils": {
+      "dependencies": [
+        "zod"
+      ],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "local",
+      "source_detail": {
+        "workspace": "packages/shared-utils"
+      },
+      "version": "1.0.0"
+    },
+    "hono": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "version": "4.4.13"
+    },
+    "zod": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "version": "3.23.8"
+    }
+  },
+  "root": {
+    "dependencies": [
+      "@my-org/api",
+      "@my-org/shared-utils"
+    ],
+    "name": "pnpm12-alpha19-registry-workspace",
+    "version": "0.0.1"
+  },
+  "schema_version": "1.0",
+  "source_file": "pnpm-lock.yaml",
+  "warnings": [
+    "Workspace packages (@my-org/api, @my-org/shared-utils) are reported as source: local; the .npmrc @my-org:registry override applies only to network-fetched packages, not workspace links.",
+    "pnpm 12 Alpha 19: --no-runtime flag in non-frozen installs does not prune the lockfile; Mend reads the full lockfile regardless of which install flags were used."
+  ]
+}
