@@ -1,0 +1,10 @@
+{
+  "name": "@my-org/api",
+  "version": "0.1.0",
+  "description": "API application workspace package",
+  "main": "index.js",
+  "dependencies": {
+    "@my-org/shared-utils": "workspace:*",
+    "hono": "4.4.13"
+  }
+}
